@@ -31,7 +31,7 @@ resource "azurerm_virtual_machine" "vm1" {
   }
 
   tags = {
-    "environment" = "production"
+    "environment" = "Production"
     "tier"        = "frontend"
   }
 }
@@ -71,6 +71,6 @@ resource "azurerm_public_ip" "public1" {
   allocation_method = "Static"
 
   tags = {
-    "environment" = "production"
+    "environment" = "Production"
   }
 }
