@@ -1,5 +1,5 @@
 resource "azurerm_virtual_machine" "vm1" {
-  name                  = "testetstetestvmnew"
+  name                  = "lavanyavm"
   resource_group_name   = "TerraformRG"
   location              = "East US"
   network_interface_ids = [azurerm_network_interface.nic1.id]
@@ -31,13 +31,13 @@ resource "azurerm_virtual_machine" "vm1" {
   }
 
   tags = {
-    "environment" = "dev"
+    "environment" = "Production"
     "tier"        = "frontend"
   }
 }
 
 resource "azurerm_virtual_network" "vnet1" {
-  name                = "testetstetest"
+  name                = "testetstet"
   address_space       = ["10.0.0.0/16"]
   location            = "East US"
   resource_group_name = "TerraformRG"
@@ -71,6 +71,6 @@ resource "azurerm_public_ip" "public1" {
   allocation_method = "Static"
 
   tags = {
-    "environment" = "dev"
+    "environment" = "Production"
   }
 }
