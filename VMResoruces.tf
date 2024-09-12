@@ -1,11 +1,11 @@
 resource "azurerm_virtual_machine" "vm1" {
-  name                  = "lavanyavm91"
+  name                  = "lavanyavm911"
   resource_group_name   = "TerraformRG"
   location              = "East US"
   network_interface_ids = [azurerm_network_interface.nic1.id]
   vm_size               = "Standard_DS1_v2"
   storage_os_disk {
-    name = "lavanyadisk1"
+    name = "lavanyadisk11"
     caching = "ReadWrite"
     managed_disk_type = "Standard_LRS"
     create_option = "FromImage"
@@ -37,7 +37,7 @@ resource "azurerm_virtual_machine" "vm1" {
 }
 
 resource "azurerm_virtual_network" "vnet1" {
-  name                = "lavanya99"
+  name                = "lavanya999"
   address_space       = ["10.0.0.0/16"]
   location            = "East US"
   resource_group_name = "TerraformRG"
@@ -52,7 +52,7 @@ resource "azurerm_subnet" "subnet1" {
 }
 
 resource "azurerm_network_interface" "nic1" {
-  name                = "lavanyanic111"
+  name                = "lavanyanic1119"
   location            = "East US"
   resource_group_name = "TerraformRG"
 
@@ -65,7 +65,7 @@ resource "azurerm_network_interface" "nic1" {
 }
 
 resource "azurerm_public_ip" "public1" {
-  name = "lavanya-test9"
+  name = "lavanya-test99"
   resource_group_name = "TerraformRG"
   location = "East US"
   allocation_method = "Static"
