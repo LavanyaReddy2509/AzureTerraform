@@ -1,5 +1,5 @@
 resource "azurerm_virtual_machine" "vm1" {
-  name                  = "lavanyavm"
+  name                  = "testetstetestvm9"
   resource_group_name   = "TerraformRG"
   location              = "East US"
   network_interface_ids = [azurerm_network_interface.nic1.id]
@@ -37,7 +37,7 @@ resource "azurerm_virtual_machine" "vm1" {
 }
 
 resource "azurerm_virtual_network" "vnet1" {
-  name                = "testetstet"
+  name                = "testetstetest"
   address_space       = ["10.0.0.0/16"]
   location            = "East US"
   resource_group_name = "TerraformRG"
